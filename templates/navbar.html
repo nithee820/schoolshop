@@ -1,0 +1,100 @@
+{% load static %}
+{% block content %}
+<head>
+<!--        <link href="{% static 'css/style1.css' %}" rel="stylesheet" />-->
+</head>
+<
+  <title>school store</title>
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
+  <!-- slick slider -->
+
+  <link rel="stylesheet" href="{% static 'css/slick-theme.css' %}" />
+  <!-- font awesome style -->
+  <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet" />
+<!--   Custom styles for this template -->
+  <link href="{% static 'css/style1.css' %}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+
+
+
+</head>
+
+<body>
+<div class="container">
+
+<header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+
+
+      <h1 class="logo me-auto"><a href="#">school store</a></h1>
+
+      <!-- Uncomment below if you prefer to use an image logo -->
+<!--       <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0 ">
+<div class="menu-links">
+
+        <ul>
+
+          <li><a   class="active" href="\"><span>Home</span></a></li>
+
+          <li><a href="{% url 'store:signup' %}">Register</a></li>
+
+
+
+          <li class="dropdown"><a href="#"><span>Department</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li class="dropdown"> <a href="https://en.wikipedia.org/wiki/Computer_science"><span>Computer Science</span> <i class="bi bi-chevron-right"></i></a>
+              <ul>
+                <li><a href="https://en.wikipedia.org/wiki/Computer">Computer Technology</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Computer_hardware">Computer Hardware</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Artificial_intelligence">Artficial intelligence</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="https://en.wikipedia.org/wiki/Engineering"><span>Engineering</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="https://en.wikipedia.org/wiki/Computer_engineering">Computer Engineering</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Civil_engineering">Civil Engineering</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Mechanical_engineering">Mechanical Engineering</a></li>
+
+                </ul>
+              </li>
+              <li class="dropdown"><a href="https://en.wikipedia.org/wiki/Commerce"><span>Commerce</span><i class="bi bi-chevron-right"></i> </a>
+              <ul>
+                <li><a  href="https://en.wikipedia.org/wiki/Bachelor_of_Business_Administration">BBA</a> </li>
+                <li><a href="https://en.wikipedia.org/wiki/Bachelor_of_Commerce">B com</a> </li>
+                <li><a href="https://en.wikipedia.org/wiki/Chartered_accountant">B com CA</a> </li>
+              </ul>
+              </li>
+              <li class="dropdown"><a href="https://en.wikipedia.org/wiki/Bachelor_of_Arts"><span>Arts</span><i class="bibi-chevron-right"></i> </a>
+              <ul>
+                <li><a href="https://en.wikipedia.org/wiki/Bachelor_of_English">B A English</a> </li>
+                <li><a href="https://en.wikipedia.org/wiki/Bachelor_of_History">BA History</a> </li>
+                   <li><a href="https://en.wikipedia.org/wiki/Bachelor_of_Phisical_Education">BA Phisical Education</a></li>
+
+              </ul>
+              </li>
+                <li class="dropdown"><a href="https://en.wikipedia.org/wiki/Biomedical_scientist"><span>Biomedical</span><i class="bibi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="https://en.wikipedia.org/wiki/Bachelor_of_Pharmacy">B Pharm</a> </li>
+                <li><a href="https://en.wikipedia.org/wiki/Nutrition">Nutritions</a> </li>
+                </ul></li>
+            </ul>
+          </li>
+<!--          <li><a href="contact.html">Contact</a></li>-->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+<!----></div>
+      </nav><!-- .navbar -->
+    </div>
+</header>
+</div>
+{% endblock %}

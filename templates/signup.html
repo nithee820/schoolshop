@@ -1,0 +1,74 @@
+{% include 'navbar.html' %}
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function redirectToLogin(){
+        window.location.href ="login.html";}
+    </script>
+    <style>
+             .container-btn .h1{
+        margin-top:200px;
+        margin-bottom:200px;
+        align-items:center;
+
+        }
+        .hover {
+
+        background-color:#9999;
+        width:400px;
+        height:380px;
+        }
+        .button-sr{
+        position:relative;
+        padding-right:0;}
+
+
+        }
+    </style>
+        <link href="{% static 'css/style1.css' %}" rel="stylesheet" />
+</head>
+<center><u><h1>Registeration </h1></u>
+    <br>
+    <br>
+    <br>
+<div class="container">
+<body  style="background-color:#EAFAF1">
+  <div class="container-btn">
+        <div class="hover">
+            <br>
+            <br>
+            <br>
+<form  action="{% url 'store:signup' %}" method="post">
+    {% csrf_token %}
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>Name:&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" name="username" placeholder="your uname">
+
+    <br><br>
+    <label>Password:&nbsp;&nbsp;</label>
+  &nbsp;&nbsp;&nbsp; <input type="password" name="password" placeholder="your pass">
+    <br><br>
+    <label>C Password:&nbsp;&nbsp;&nbsp;</label>
+    <input type="password" name="confirm_password" placeholder="c your pass">
+    <br><br>
+    <div class="button-sr">
+    <button type="submit" onclick="redirectToLogin()">Submit</button>
+    <button type="reset"> Reset</button>
+        </div>
+    </form>
+    {% for msg in messages %}
+<h2>{{msg}}</h2>
+{% endfor %}
+
+
+            </div>
+</div>
+</body>
+</div>
+
+</div>
+    {% include 'footer.html' %}
+</html>

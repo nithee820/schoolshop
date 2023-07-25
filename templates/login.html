@@ -1,0 +1,84 @@
+
+{% include 'navbar.html' %}
+
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LOG IN PAGE</title>
+    <link rel="stylesheet"  href="log.css">
+    <style>
+        .button-container{
+        margin-top:200px;
+        margin-bottom:200px;
+        .container{
+        margin-top:5px;
+        }
+        }
+        .hover {
+
+        background-color:#999;
+        width:400px;
+        height:250px;
+        position:relative;
+        }
+
+    </style>
+       <link href="{% static 'css/style1.css' %}" rel="stylesheet" />
+</head>
+
+<body style="background-color:#F08080;">
+<center>
+<div class="button-container">
+<div class="hover">
+    <br>
+    <br>
+<form method="POST" action="{% url 'store:login' %}">
+  {% csrf_token %}
+    <div class="container">
+  <label  for="username">Username:</label>
+  <input type="text" id="username" name="username" required><br><br>
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" required><br>
+    <br>
+
+  <input type="submit" value="Login">
+    <p>Create Account <a href="{% url 'store:signup' %}">Sign up
+
+        </a> to register.</p></div>
+
+</form>
+ </div>
+</div>
+
+{% if error %}
+  <p>{{ error }}</p>
+{% endif %}
+
+
+</div>
+    </div>
+<!--  <label for="username">Username:</label>-->
+<!--  <input type="text" id="uname" name="username" required><br>-->
+<!--  <label for="password">Password:</label>-->
+<!--  <input type="password" id="pass" name="password" required><br>-->
+<!--  <label for="email">Email:</label>-->
+<!--  <input type="email" id="email" name="email" required><br>-->
+
+
+
+
+    </center>
+
+<!--    <input id="Register" type="submit" name="Register" value="Register">-->
+
+</form>
+</div>
+</div>
+ </body>
+{% for msg in messages %}
+<h2>{{msg}}</h2>
+{% endfor %}
+{% include 'footer.html' %}
+</html>

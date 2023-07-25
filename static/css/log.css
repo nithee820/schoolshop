@@ -1,0 +1,27 @@
+.button-container {
+  display: flex;
+  justify-content: space---between;
+
+}
+
+
+.login-button,
+.register-button {
+
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-form {
+  /* Add your form styles here */
+}
+.container{
+ display: flex;
+  justify-content: space---between;
+
+}
+

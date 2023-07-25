@@ -1,0 +1,424 @@
+
+{% load static %}
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>school store</title>
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
+  <!-- slick slider -->
+
+  <link rel="stylesheet" href="{% static 'css/slick-theme.css' %}" />
+  <!-- font awesome style -->
+  <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet" />
+<!--   Custom styles for this template -->
+  <link href="{% static 'css/style1.css' %}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+
+
+
+</head>
+
+<body>
+<div class="container">
+
+<header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+
+
+      <h1 class="logo me-auto"><a href="#">school store</a></h1>
+
+      <!-- Uncomment below if you prefer to use an image logo -->
+<!--       <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0 ">
+<div class="menu-links">
+
+        <ul>
+
+          <li><a   class="active" href="\"><span>Home</span></a></li>
+
+          <li><a href="{% url 'store:signup' %}">Register</a></li>
+
+
+
+          <li class="dropdown"><a href="#"><span>Department</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li class="dropdown"> <a href="https://en.wikipedia.org/wiki/Computer_science"><span>Computer Science</span> <i class="bi bi-chevron-right"></i></a>
+              <ul>
+                <li><a href="https://en.wikipedia.org/wiki/Computer">Computer Technology</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Computer_hardware">Computer Hardware</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Artificial_intelligence">Artficial intelligence</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="https://en.wikipedia.org/wiki/Engineering"><span>Engineering</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="https://en.wikipedia.org/wiki/Computer_engineering">Computer Engineering</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Civil_engineering">Civil Engineering</a></li>
+                  <li><a href="https://en.wikipedia.org/wiki/Mechanical_engineering">Mechanical Engineering</a></li>
+
+                </ul>
+              </li>
+              <li class="dropdown"><a href="https://en.wikipedia.org/wiki/Commerce"><span>Commerce</span><i class="bi bi-chevron-right"></i> </a>
+              <ul>
+                <li><a  href="https://en.wikipedia.org/wiki/Bachelor_of_Business_Administration">BBA</a> </li>
+                <li><a href="https://en.wikipedia.org/wiki/Bachelor_of_Commerce">B com</a> </li>
+                <li><a href="https://en.wikipedia.org/wiki/Chartered_accountant">B com CA</a> </li>
+              </ul>
+              </li>
+              <li class="dropdown"><a href="https://en.wikipedia.org/wiki/Bachelor_of_Arts"><span>Arts</span><i class="bibi-chevron-right"></i> </a>
+              <ul>
+                <li><a href="https://en.wikipedia.org/wiki/Bachelor_of_English">B A English</a> </li>
+                <li><a href="https://en.wikipedia.org/wiki/Bachelor_of_History">BA History</a> </li>
+                   <li><a href="https://en.wikipedia.org/wiki/Bachelor_of_Phisical_Education">BA Phisical Education</a></li>
+
+              </ul>
+              </li>
+                <li class="dropdown"><a href="https://en.wikipedia.org/wiki/Biomedical_scientist"><span>Biomedical</span><i class="bibi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="https://en.wikipedia.org/wiki/Bachelor_of_Pharmacy">B Pharm</a> </li>
+                <li><a href="https://en.wikipedia.org/wiki/Nutrition">Nutritions</a> </li>
+                </ul></li>
+            </ul>
+          </li>
+<!--          <li><a href="contact.html">Contact</a></li>-->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+<!----></div>
+      </nav><!-- .navbar -->
+
+      <a href="{% url 'store:login' %}" class="get-started-btn">Login</a>
+
+
+</div>
+
+<!--<li><a href=""><span></span></a></li>-->
+ </div>
+          </div>
+    </div>
+
+</header><!-- End Header -->
+
+
+<br>
+<br>
+
+  <section class="about_section layout_padding">
+
+    <div class="container  ">
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="img-box"><br><br>
+            <img src="{% static 'images/about-img.jpg' %}" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                Welcome To Our <span>College</span>
+              </h2>
+            </div>
+            <p>
+              Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. </p>
+            <a href="">
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+
+  <!-- course section -->
+
+  <section class="course_section layout_padding-bottom">
+    <div class="container"><center>
+      <div>
+        <h2>
+
+          Our <span>Courses</span>
+         </h2>
+        <p>
+          going to use a passage of Lorem Ipsum, you need to be sure there isn't
+        </p>
+      </div>
+        </center>
+
+    </div>
+    <div id="customCarousel2" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="box">
+              <div class="img-box">
+                <img src="{% static 'images/course-img.jpg' %}" alt="">
+              </div>
+              <div class="row">
+                <div class="col-lg-7 col-md-9 mx-auto">
+                  <div class="detail-box">
+                    <h3>
+                      Node with React
+                    </h3>
+                    <p>
+                      Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
+                    </p>
+                    <a href="">
+                      Read More
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="box">
+              <div class="img-box">
+                <img src="{% static 'images/course-img.jpg' %}" alt="">
+              </div>
+              <div class="row">
+                <div class="col-lg-7 col-md-9 mx-auto">
+                  <div class="detail-box">
+                    <h3>
+                      Node with React
+                    </h3>
+                    <p>
+                      Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
+                    </p>
+                    <a href="">
+                      Read More
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="box">
+              <div class="img-box">
+                <img src="{% static 'images/course-img.jpg' %}" alt="">
+              </div>
+              <div class="row">
+                <div class="col-lg-7 col-md-9 mx-auto">
+                  <div class="detail-box">
+                    <h3>
+                      Node with React
+                    </h3>
+                    <p>
+                      Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
+                    </p>
+                    <a href="">
+                      Read More
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel_btn-box">
+        <a class="carousel-control-prev" href="#customCarousel2" role="button" data-slide="prev">
+          <i class="fa fa-angle-left" aria-hidden="true"></i>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#customCarousel2" role="button" data-slide="next">
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- end course section -->
+
+  <!-- subscribe section -->
+
+  <section class="subscribe_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="{% static 'images/subscribe-img.png' %}" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <h2>
+              Subscribe Our Newsletter
+            </h2>
+            <form action="">
+              <input type="email" placeholder="Enter your Email">
+              <button type="submit">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end subscribe section -->
+
+  <!-- lab section -->
+
+  <section class="lab_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Reasearch <span>Lab</span>
+        </h2>
+        <p>
+          going to use a passage of Lorem Ipsum, you need to be sure there isn't
+        </p>
+        <div class="box">
+          <div class="img-box">
+            <img src="{% static 'images/lab-img.jpg' %}" alt="">
+          </div>
+          <div class="row">
+            <div class="col-lg-7 col-md-9 mx-auto">
+              <div class="detail-box">
+                <p>
+                  Internet tend to repeat predefined chunks as necessary, making this the first true generator on the IInternet tend to repeat pr
+                  edefined chunks as necessary, making this the first true generator
+                  on the IInternet tend to repeat predefined chunks as necessary, making this the first true generator on the I
+                </p>
+                <a href="">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end lab section -->
+
+  <div class="bottom_bg">
+    <!-- client section -->
+    <section class="client_section layout_padding">
+      <div class="container">
+        <div class="heading_container">
+          <h2>
+            What says our Students
+          </h2>
+        </div>
+      </div>
+      <div id="customCarousel3" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="box">
+                <div class="client_info">
+                  <div class="client_name">
+                    <h4>
+                      Mohilcal
+                    </h4>
+                    <h6>
+                      Alteration in some
+                    </h6>
+                  </div>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i>
+                </div>
+                <p>
+                  Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don'tLorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't
+                  Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don'tLorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="box">
+                <div class="client_info">
+                  <div class="client_name">
+                    <h4>
+                      Mohilcal
+                    </h4>
+                    <h6>
+                      Alteration in some
+                    </h6>
+                  </div>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i>
+                </div>
+                <p>
+                  Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don'tLorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't
+                  Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don'tLorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="box">
+                <div class="client_info">
+                  <div class="client_name">
+                    <h4>
+                      Mohilcal
+                    </h4>
+                    <h6>
+                      Alteration in some
+                    </h6>
+                  </div>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i>
+                </div>
+                <p>
+                  Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don'tLorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't
+                  Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don'tLorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel_btn-box">
+          <a class="carousel-control-prev" href="#customCarousel3" role="button" data-slide="prev">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#customCarousel3" role="button" data-slide="next">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- end client section -->
+    <!-- contact section -->
+    <div style="background-color:#ffff;" class="container"></div>
+
+    {% block content %}
+
+{% endblock %}
+</div>
+{% include 'footer.html' %}
+</div>
+  </body>
+
+</html>
